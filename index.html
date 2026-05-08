@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="todo-app">
+    <section class="todo-card">
+      <h1 class="rainbow-text">Wiz TODO-LIST</h1>
+      <form id="todo-form" class="todo-form" autocomplete="off">
+        <input
+          id="todo-input"
+          type="text"
+          placeholder="What do you need to do?"
+          aria-label="New todo"
+        />
+        <button type="submit">Add</button>
+      </form>
+
+      <div class="todo-controls">
+        <button id="clear-completed" type="button">Clear Completed</button>
+      </div>
+
+      <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
+
+      <p id="empty-state" class="empty-state">Your list is empty. Add a task to get started.</p>
+    </section>
+  </main>
+
+  <footer class="page-footer">...Designed by Wisdom</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
